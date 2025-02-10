@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Account Hub</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+        /* General Styles */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: #121212;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        h1 {
+            background: linear-gradient(to right, #ff4500, #ffcc00);
+            padding: 20px;
+            font-size: 28px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+
+        /* Section Styling */
+        h2 {
+            color: #ffcc00;
+            margin-top: 30px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: rgba(255, 69, 0, 0.2);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            background-color: #ff4500;
+        }
+
+        /* Form Styling */
+        form {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        button {
+            background: linear-gradient(to right, #ff4500, #ffcc00);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #ffcc00;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            font-size: 14px;
+        }
+
+        /* Customer Feedback */
+        .feedback {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🔥 Game Account Hub 🔥</h1>
+
+    <p>Get premium game accounts with feedback and instant delivery!</p>
+
+    <h2>🎮 Why Choose Our Game Accounts?</h2>
+    <ul>
+        <li>🚀 Ultra-fast delivery</li>
+        <li>🎯 4K & 8K ultra gaming support</li>
+        <li>🌍 Thousands of game accounts available</li>
+        <li>✅ Game accounts with real player feedback</li>
+    </ul>
+
+    <h2>🛒 Explore Our Game Account Collection</h2>
+    <p>Buy accounts for CODM, Free Fire, PUBG, EFootball, Dream League, FC25, and more.</p>
+
+    <h2>🛍️ Buy a Game Account Now</h2>
+    <form id="purchaseForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="game">Select Game:</label>
+        <select id="game" name="game">
+            <option value="codm">Call of Duty Mobile</option>
+            <option value="pubg">PUBG</option>
+            <option value="freefire">Free Fire</option>
+            <option value="bloodstrike">Blood Strike</option>
+            <option value="efootball">EFootball</option>
+            <option value="dreamleague">Dream League</option>
+            <option value="fc25">FC25</option>
+            <option value="asphalt">Asphalt</option>
+        </select>
+
+        <button type="button" onclick="redirectToGame()">Buy Now</button>
+    </form>
+
+    <h2>🌟 Customer Feedback</h2>
+    <div class="feedback">"The best place to buy game accounts! Fast and secure!" - Alex</div>
+    <div class="feedback">"I got my Free Fire account in just 5 minutes!" - Sarah</div>
+
+    <footer>
+        <p>&copy; 2025 Game Account Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToGame() {
+            let game = document.getElementById("game").value;
+            let gameLinks = {
+                "codm": "https://yourstore.com/codm-account",
+                "pubg": "https://yourstore.com/pubg-account",
+                "freefire": "https://yourstore.com/freefire-account",
+                "bloodstrike": "https://yourstore.com/bloodstrike-account",
+                8"efootball": "https://yourstore.com/efootball-account",
+                "dreamleague": "https://yourstore.com/dreamleague-account",
+                "fc25": "https://yourstore.com/fc25-account",
+                "asphalt": "https://yourstore.com/asphalt-account"
+            };
+
+            alert("Redirecting to your game account...");
+            window.location.href = gameLinks[game]; // Redirects the user to the selected game account
+        }
+    </script>
+
+</body>
+</html>
